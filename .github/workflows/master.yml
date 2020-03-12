@@ -19,7 +19,7 @@ jobs:
         node-version: '10.x'
 
     - name: Markdown link check
-      uses: gaurav-nelson/github-action-markdown-link-check@0.4.0
+      uses: gaurav-nelson/github-action-markdown-link-check@0.6.0
 
     - name: Build dependencies
       run: auto/build
