@@ -5,7 +5,7 @@ tags: ["安全故事会"]
 categories: ["安全故事会"]
 author: "Chen Xiyu"
 ---
-原文发表于: https://blog.94xychen.net/posts/secuity-sign-your-git-commit/
+原文发表于: https://blog.94xychen.net/posts/sign-your-git-commit/
 
 最近在Github 上发现一个有意思的功能: 如果一个提交被作者签名了, 并且签名可被验证的话, 提交上会显示一个绿色的`Verified`的标志.如下图所示:
 
