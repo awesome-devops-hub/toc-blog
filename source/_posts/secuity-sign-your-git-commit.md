@@ -1,12 +1,15 @@
 ---
-title: Sign Your Work
-date: 2020-02-23T05:54:46Z
-draft: false
+title: "安全故事会 - 第二期：Sign Your Work"
+date: 2020-03-26T05:54:46Z
+tags: ["安全故事会"]
+categories: ["安全故事会"]
+author: "Chen Xiyu"
 ---
-原文发表于: https://blog.94xychen.net/posts/sign-your-git-commit/
+原文发表于: https://blog.94xychen.net/posts/secuity-sign-your-git-commit/
 
 最近在Github 上发现一个有意思的功能: 如果一个提交被作者签名了, 并且签名可被验证的话, 提交上会显示一个绿色的`Verified`的标志.如下图所示:
-![](/images/sign-your-git-commit/1.png)
+
+![](/images/secuity-sign-your-git-commit/1.png)
 这篇文章, 我们就来聊聊为什么要签名你的提交以及如何去做.
 ## 什么是签名?
 在真正的进入正文之前, 我想先简单的普及一下签名这个密码学的概念, 有些同学听到密码学这个词就觉得好复杂而心生畏惧, 其实大可不必, 如果只是应用的话, 你大可不需要了解每一个算法的细节, 你只需要知道他们的特点以及应用场景就完全足够了, 这里我就会以一个非常简化的模型来解释数字签名是如何实现的.
@@ -31,7 +34,7 @@ hash 散列算法可以将一个任意长度的内容转化成一个固定长度
 于是, 我们可以将这一对密钥区分成公钥和私钥, 公钥直接放在互联网上, 而私钥自己保管好(这是关键, 私钥就代表你自己), 如果别人需要和你进行加密通信, 就可以直接用你的公钥加密, 而不需要像对称密码算法一样先和你交换密钥(当然, 这里又涉及到了公钥可行度的问题, 密码学通常通过证书来解决. 而且, 由于非对称密码算法的性能还是不如对称密码算法, 所以非对称密码在实际的加解密过程中通常扮演安全密钥交换通道的作用, 密码学有太多的东西可以讲, 以后有机会再说.).
 
 ### 简单的签名实现
-![](/images/sign-your-git-commit/2.jpeg)
+![](/images/secuity-sign-your-git-commit/2.jpeg)
 我们先有请密码学中的李雷和韩梅梅: Alice 和 Bob. 假设Alice 想给Bob 发一条消息说: `Hello Bob. Do you have time tonight?`. 如果Bob 收到这条消息, 他怎么知道这条消息就是Alice 发的呢? 万一是Bob的情敌要骗他出来干仗呢? 于是, Alice 做了两件事:
 1. 用hash散列算法计算出了这条消息的指纹: `c01228362b0b8f707c018fe24cca6ac179e2619d1fcfa47cdd19fa1235feb251`
 2. 用自己的私钥给这条指纹加密: `ZmI3NmY3M2M4ZTQ3YmRlMGE3ZDI1ZGM2MjViOGUzNDg=`
@@ -131,11 +134,11 @@ do90
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 在Github 的这个页面将public key的内容上传上去:
-![](/images/sign-your-git-commit/3.png)
+![](/images/secuity-sign-your-git-commit/3.png)
 
 恭喜你, 到这里, 你的提交就是`Verified`了.
 你就可以像我一样帅气的拥有全Verified 提交记录了, ( •́ὤ•̀)你酸了没?.
-![](/images/sign-your-git-commit/4.png)
+![](/images/secuity-sign-your-git-commit/4.png)
 
 ## Advanced Tips
 ### 缓存密码
@@ -169,7 +172,7 @@ gpg: Good signature from "ninety-four-xychen <94xychen@gmail.com>" [ultimate]
 Author: ninety-four-xychen <94xychen@gmail.com>
 Date:   Sun Feb 23 15:56:31 2020 +0800
 
-    add new post: sign-your-git-commit
+    add new post: secuity-sign-your-git-commit
 
 commit 87e8443f9880feb3d56d0bf62ed171b6c0e2d10f
 gpg: Signature made Sun Feb 23 13:54:04 2020 CST
