@@ -1,3 +1,8 @@
+---
+title: "Readme"
+date: 2019-11-20 10:15:56
+tags: "Hexo"
+---
 # toc-blog
 
 This is the origin repo serving all the raw blogs, which is the markdown file.
@@ -40,7 +45,7 @@ Currently, the theme is cloned from github. To use another theme, you need:
 1. Change git submodule using.
 
 ```
-  git submodule add giturl themes/themename
+  git submodule add ${giturl} themes/themename
 ```
 
 1. Change the `theme` `in _config.yml`.
