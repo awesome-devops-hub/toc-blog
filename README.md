@@ -22,6 +22,16 @@ This is the origin repo serving all the raw blogs, which is the markdown file.
 1. Wait the pr workflow success.
 1. After the administrator of toc blog approved and merged, your blog will be displayed on our blog system.
 
+## How to add image to a blog
+
+### Where to put image
+
+Create a folder the same name as your post in `source/images`.
+
+### How to qoute image
+
+Using ![](/images/${foldername}/${imagename}) in your post.
+
 ## How to change a theme
 
 Currently, the theme is cloned from github. To use another theme, you need:
