@@ -20,6 +20,11 @@ jobs:
 
     - name: Markdown link check
       uses: gaurav-nelson/github-action-markdown-link-check@0.6.0
+      with:
+        use-quiet-mode: 'yes'
+        use-verbose-mode: 'yes'
+        config-file: 'mlc_config.json'
+        folder-path: 'source/_posts'
 
     - name: Build dependencies
       run: auto/build
