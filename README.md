@@ -1,8 +1,8 @@
-# toc-blog
+# [toc-blog](https://blog.toc-platform.com/)
 
 This is the origin repo serving all the raw blogs, which is the markdown file.
 
-[Toc Blog](https://blog.toc-platform.com/)
+[Toc Blog Repo](https://github.com/awesome-devops-hub/awesome-devops-hub.github.io)
 
 ## Tech stacks
 
