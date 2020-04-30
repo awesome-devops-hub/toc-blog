@@ -64,8 +64,9 @@ devops是一种打破dev和ops之间边界，把两个角色的工作磨合到�
 - [关于devops的拼写](https://blog.damnops.com/the-name-of-devops/)
 - [Wiki上的devops的定义](https://zh.wikipedia.org/wiki/DevOps)
 - [devops组织结构模式](https://web.devopstopologies.com/)
-- [Jez Humble](https://www.linkedin.com/in/jez-humble)
-- [devops的5大基石/支柱](https://miro.medium.com/max/3200/1*ybLbkNosKN-5y_OzLnnmMw.png)
-- [马斯洛的需求层次理论](https://zh.wikipedia.org/zh-hk/需求层次理论)
 - [我国在国际上的优势领域](https://www.sohu.com/a/124962731_604484)
-
+- [devops的5大基石/支柱](https://miro.medium.com/max/3200/1*ybLbkNosKN-5y_OzLnnmMw.png)
+<!-- markdown-link-check-disable -->
+- [Jez Humble](https://www.linkedin.com/in/jez-humble)
+- [马斯洛的需求层次理论](https://zh.wikipedia.org/zh-hk/需求层次理论)
+<!-- markdown-link-check-enable -->
