@@ -84,7 +84,6 @@ Docker已经妥妥的成为了容器的业界标准，虽然不时的还有一�
 - **如何更快的build镜像**，这个是最初引发这个讨论的让人头疼的主题，但是追根究底来讲其实是一个网速问题，因为我们在安装和编译过程中是会下载大量的依赖的。所以，目前用的比较多的方法有二。使用cache或私有仓库是一个方法，不论是docker的cache还是agent的cache，亦或是一个proxy的cache也可以，实在不行创建自己私有的包管理仓库吧，这也是很多企业最后的选择，省时间也省流量。另外一个办法就是做一个base image，但是这个取决于所需依赖和安装包的更新频率，很多的时候，一些团队采用的折衷策略就是把这个base image做一个nightly的更新，但是不管怎么样，都是有额外的管理成本在其中的，自己取舍吧。
 - **一些操作到底是放在dockerfile中还是entrypoint的脚本中？** 这个只能说是个人偏好了，没有所谓的对错，震宇举了一个很好的例子，就如同jenkinsfile一样，你是把命令直接写在step里面，还是写在一个脚本里面然后调用它。我个人坚持步骤和逻辑分离的原则，在dockerfile中我更倾向于尽量少的做逻辑处理和配置相关的操作，这些内容放在初始化的脚本里面更符合我的习惯，除了逻辑部分集中之外，另外一个好处是在测试改动的时候不需要重新build镜像，把这个文件挂载进容器就可以了，anyway，使用你自己舒服的方式来做事。
 
-
 ## 参考资料
 
 - [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/), Docker官方的Best Practice
