@@ -10,6 +10,3 @@ jobs:
     steps:
     - name: Code checkout
       uses: actions/checkout@v1
-
-    - name: Markdown link check
-      uses: gaurav-nelson/github-action-markdown-link-check@v1
